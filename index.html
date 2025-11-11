@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Ejecutiva - Defecto BUTSU</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Defecto BUTSU en Línea KYOWA</h1>
+        <p>Análisis Causa Raíz y Acciones Correctivas</p>
+    </header>
+
+    <main>
+        <section id="problema" class="slide">
+            <h2>🚨 1. Problema de Calidad - Defecto BUTSU</h2>
+            <div class="content-grid">
+                <div class="card defect-identified">
+                    <h3>Defecto Identificado</h3>
+                    <div class="blue-border-box">
+                        <p class="big-text">BUTSU (Rebaba en el Canto)</p>
+                        <img src="butsu.jpg" alt="Defecto BUTSU (Rebaba en el Canto)" class="defect-image">
+                        <p>Defecto en el borde del material de bobina, generado por un corte deficiente.</p>
+                        <p>Material Afectado: Acero de Alta Resistencia, Spec: SAE1541M, Espesor: 3.67mm.</p>
+                    </div>
+                </div>
+                
+                <div class="card impact-data">
+                    <h3>Impacto y Bloqueo de Material</h3>
+                    <div class="blue-border-box">
+                        <p class="impact-total-text">Material en Planta</p>
+                        <canvas id="impactoChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="causa" class="slide">
+            <h2>🔍 2. Causa Raíz: Gestión de Suministro de Cuchillas</h2>
+            <div class="timeline-container">
+                <div class="timeline-item expected">
+                    <span class="date">Febrero 2025</span>
+                    <p>Se emite la Orden de Compra (OC) para cuchillas SVH77 (Alta resistencia) (Vida Útil calculada hasta: Agosto 2025).</p>
+                </div>
+                <div class="timeline-item delay">
+                    <span class="date">Agosto - Octubre 2025</span>
+                    <p>Inicio de Contratiempos en Llegada de Suministro (Cuchillas de alta resistencia), lo que deriva la necesidad de Extender de la vida útil de las cuchillas instaladas.</p>
+                </div>
+                <div class="timeline-item critical">
+                    <span class="date">Octubre 2025</span>
+                    <p>Aparición del Defecto BUTSU</p>
+                    <p>Derivado por Trabajar con Cuchillas Cercanas a su Diámetro Final de Vida útil.</p>
+                </div>
+                <div class="timeline-item new-blade">
+                    <span class="date">Noviembre 2025</span>
+                    <p>Llegada e Instalación de Nuevas Cuchillas (04/11/2025). Corrida Supervisada Resultando en Material Dentro de Especificaciones.</p>
+                </div>
+            </div>
+            <p class="summary">El defecto se originó al extender la vida útil de las cuchillas por un Retraso de 3 meses en la entrega, pasando de 4 a 7 meses en total.</p>
+        </section>
+
+        <section id="acciones" class="slide">
+            <h2>✅ 3. Acciones Correctivas Inmediatas y Permanentes</h2>
+            <div class="content-grid">
+                <div class="card action">
+                    <h3>Acción Inmediata (Contención)</h3>
+                    <ul>
+                        <li>Se Generó una AYUDA VISUAL para identificar el defecto especifico y gestionar su contensión.</li>
+                        <li>Se Generó HOJA DE OPERACIÓN para realizar el retrabajo de manera correcta cuidando mantener los criterios de aceptación del material.</li>
+                    </ul>
+                </div>
+                <div class="card action permanent">
+                    <h3>Acción Permanente (Stock de Seguridad)</h3>
+                    <p>Las nuevas cuchillas tienen una vida útil de 5 años.</p>
+                    <p>Para prevenir una recurrencia, se Presupuesto la compra de un segundo juego de cuchillas para establecer un Stock de Seguridad llegada en 2026.</p>
+                    <p class="note">Esto asegura la continuidad operativa, incluso ante retrasos imprevistos de más de 6 meses.</p>
+                </div>
+            </div>
+        </section>
+
+<section id="mejora" class="slide">
+    <h2>💡 4. Mejora del Proceso y Control de Calidad</h2>
+
+    <div class="content-grid">
+
+        <!-- Control de Claros y Cuchillas -->
+        <div class="card process">
+            <h3>Control de Claros y Cuchillas</h3>
+            <ul>
+                <li>Se implementa un formato de registro para documentar los claros, el juego de cuchillas y las gomas utilizadas en cada armado. Esto permitirá construir un historial confiable y detectar variaciones que generen rebaba (butsu).</li>
+                <li>Se actualizan las hojas de operación para incluir criterios de detección temprana del defecto butsu, facilitando la intervención inmediata cuando el proceso muestre desviaciones.</li>
+            </ul>
+        </div>
+
+        <!-- Refuerzo Técnico Kyowa -->
+        <div class="card kyowa">
+            <h3>Refuerzo Técnico Línea Kyowa Slitter</h3>
+            <p>Se implementa capacitación para operadores y personal de calidad, enfocado en el reconocimiento del defecto butsu y en las acciones de corrección asociadas.</p>
+            <p>Se analiza la adquisición de un gauge especializado para medir redondez y planicidad de las cuchillas, asegurando su condición antes de usarse en producción.</p>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+    <footer>
+        <p>Presentación Confidencial MOSMEX - NIPPON STEEL PIPE MEXICO SA DE CV</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
