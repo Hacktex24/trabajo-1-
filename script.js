@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const ctx = document.getElementById('impactoChart').getContext('2d');
     
     // <<<<<< ESTAS SON LAS LÍNEAS QUE DEBES AJUSTAR >>>>
-    const totalBloqueado = 39870; 
-    const retrabajoRealizado = 20050;
-    const retrabajoNoAceptado = 2160;
-    const returnMNSP = 6460;
-    const pendienteBloqueado = 11200;
+    const totalBloqueado = 39.870; 
+    const retrabajoRealizado = 20.050;
+    const retrabajoNoAceptado = 2.160;
+    const returnMNSP = 6.460;
+    const pendienteBloqueado = 11.200;
 
     new Chart(ctx, {
         type: 'doughnut',
@@ -59,4 +59,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
 });
